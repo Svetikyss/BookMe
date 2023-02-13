@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "DE3D37E0-DAF0-4D56-9BD5-1097A3C5E3BD"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EC478D33-20C2-468C-ABBF-B2CCFC695F26"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BookMe/View/DateSelectView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "DateSelectView"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "EC478D33-20C2-468C-ABBF-B2CCFC695F26 - d218f19ebb75da75"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "property wrapper backing initializer of BookMe.DateSelectView.servis : BookMe.servisTitle"
+                  moduleName = "BookMe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/svetlana/Desktop/BookMe/BookMe/View/DateSelectView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  uuid = "EC478D33-20C2-468C-ABBF-B2CCFC695F26 - afff7b3e232f42af"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BookMe.DateSelectView.servis.getter : BookMe.servisTitle"
+                  moduleName = "BookMe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/svetlana/Desktop/BookMe/BookMe/View/DateSelectView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "EC478D33-20C2-468C-ABBF-B2CCFC695F26 - 7cf641c826ea7aa3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BookMe.DateSelectView.servis.setter : BookMe.servisTitle"
+                  moduleName = "BookMe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/svetlana/Desktop/BookMe/BookMe/View/DateSelectView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "111">
+               </Location>
+               <Location
+                  uuid = "EC478D33-20C2-468C-ABBF-B2CCFC695F26 - d2a1b913974b0c92"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BookMe.DateSelectView.servis.modify : BookMe.servisTitle"
+                  moduleName = "BookMe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/svetlana/Desktop/BookMe/BookMe/View/DateSelectView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "EC478D33-20C2-468C-ABBF-B2CCFC695F26 - f8aa88210f0daea3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BookMe.DateSelectView.servis.modify : BookMe.servisTitle with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "BookMe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/svetlana/Desktop/BookMe/BookMe/View/DateSelectView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "39">
+               </Location>
+               <Location
+                  uuid = "EC478D33-20C2-468C-ABBF-B2CCFC695F26 - 4277b099b2b0f1eb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BookMe.DateSelectView.$servis.getter : SwiftUI.Binding&lt;BookMe.servisTitle&gt;"
+                  moduleName = "BookMe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/svetlana/Desktop/BookMe/BookMe/View/DateSelectView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "124">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CAFBF3DD-367D-4C00-91F1-26B546C1D299"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BookMe/Model/AppointmentData.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "4"
+            endingLineNumber = "4"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "48B5EE3B-57A5-4FF8-873B-2A85A328817C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BookMe/Model/AppointmentData.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "5"
+            endingLineNumber = "5"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
