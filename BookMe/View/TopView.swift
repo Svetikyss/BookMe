@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TopView: View {
-    
+   
     let images: [ServisModel]=[
         .init(id:1, title: .Nails, price: "70$", image: "img2"),
         .init(id:2, title: .Makeup, price: "80$", image: "img3"),
@@ -22,7 +22,7 @@ struct TopView: View {
         ScrollView(.horizontal, showsIndicators: false){
             HStack(alignment: .center,spacing: 20){
                 ForEach(images, id: \.id){post in
-                    NavigationLink(destination: DetailsView(servis: post.title)) {
+                    NavigationLink(destination: DateSelectView(servis: post.title)) {
                         ServisCardView(servises: post)
                             .shadow(color: .gray, radius: 5,x:5,y:5) 
                     }}

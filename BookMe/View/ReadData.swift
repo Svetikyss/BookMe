@@ -28,77 +28,28 @@ class ReadData: ObservableObject {
     }
     
     
-    //    func getData() {
-    //        let docRef = db.collection("Appointments").document("")
-    //        docRef.getDocument { (document, error) in
-    //            if let document = document, document.exists {
-    //                let dataDescription = document.data().map(String.init(describing:)) ?? "nil"
-    //                print("Document data: \(dataDescription)")
-    //            } else {
-    //                print("Document does not exist")
-    //            }    }
-    //
-    //
-    //    }}
     
-    //    docRef.getDocument { (document, error) in
-    //        if let document = document, document.exists {
-    //            let dataDescription = document.data().map(String.init(describing:)) ?? "nil"
-    //            print("Document data: \(dataDescription)")
-    //        } else {
-    //            print("Document does not exist")
-    //        }
-    //    }
+    func fetchData() {
+            db.collection("Appointments").addSnapshotListener { (querySnapshot, error) in
+                guard let documents = querySnapshot?.documents else {
+                    print("No documents")
+                    return
+                }
+                self.list = documents.map { (queryDocumentSnapshot) -> Appointment in
+                    let data = queryDocumentSnapshot.data()
+                    let time = data["time"] as? String ?? ""
+                    let servis = data["servis"] as? String ?? ""
+                    let date = data["date"] as? String ?? ""
+                    return Appointment(servis: servis, date: date, time: time)
+                }
+            }
+        }
     
     
-//    private var databaseReference = Firestore.firestore().collection("Appointments")
-//    func fetchData() {
-//        databaseReference.addSnapshotListener { (querySnapshot, error) in
-//            guard let documents = querySnapshot?.documents else {
-//                print("No documents")
-//                return
-//            }
-//
-//            self.list = documents.map { (queryDocumentSnapshot) -> Appointment in
-//                let data = queryDocumentSnapshot.data()
-//                let servis = data["servis"] as? String??; ""
-//                let date = data["date"] as? String??; ""
-//                let time = data["time"] as? String??; ""
-//                return Appointment(id: <#String#>, servis: servis ?? <#default value#>, date: date!, time: time ?? <#default value#>)
-//            }
-//        }
-//
-//    }
-//
-//}
-//        func getDat()  {
-//            let db = Firestore.firestore()
-//    
-//            db.collection("Appointments").getDocuments { (snapshot, error) in
-//                if error == nil {
-//    
-//                    if let snapshot = snapshot {
-//    
-//                        DispatchQueue.main.async {
-//    
-//                            self.list = snapshot.documents.map { d in
-//    
-//                                return Appointment(id: d.documentID,
-//                                                   servis: d["servic"],
-//                                                   date: d["date"],
-//                                                   time: d["time"])
-//                            }
-//                        }
-//    
-//    
-//                    }
-//                }
-//                            else {
-//                // handle errors
-//                            }
-//    
-//            }
-//        }
+    
+    
+    
+    
     }
     
     

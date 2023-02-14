@@ -17,44 +17,19 @@ struct DateSelectView: View {
     
     let db = Firestore.firestore()
  
-    @State var servis: servisTitle
-    
+//    @State
+    var servis: servisTitle
+    @State var goWhenTrue: Bool = false
     @State var date: Date = Date()
     @State var selectedTime = "10:00"
     
    var appointments = [Appointment]()
     @ObservedObject private var viewModel = ReadData()
-//    
-//    
-//    List(viewModel.appoitntments) { one; in
-//                                VStack(alignment: .leading) {
-//                                    Text("")
-//                                }
-//                            }.onAppear() {
-//                                self.viewModel.fetchData()
-//                            }.navigationTitle("All Tasks")
-    
-    //    mutating func fetchData() {
-//        Firestore.firestore()
-//        db.collection("Appointments").addSnapshotListener { (querySnapshot, error) in
-//                guard let documents = querySnapshot?.documents else {
-//                    print("No documents")
-//                    return
-//                }
-//                
-//                self.appointments = documents.compactMap { queryDocumentSnapshot -> Appointment? in
-//                    return try? queryDocumentSnapshot.data(as: Appointment.self)
-//                }
-//            }
-//        }
-//    
-    
+
 //    var appointment: [Appointment]  = [Appointment(servis: <#String#>, date: <#String#>, time: <#String#>, servisTime: <#String#>)]
 
     
     var body: some View {
-        
-        
         
         VStack{
             Text("Select date and time ")
@@ -101,15 +76,15 @@ struct DateSelectView: View {
                     
                     
                     
-                    
-                    
-                    Button(action: {
-                        viewModel.addData(servis: servis.rawValue, date: newDate ,time: selectedTime)
-                    }, label: {
-                        Text("Add")
-                    })
-                    
-                    
+                    NavigationLink(destination: ReadView(), isActive: $goWhenTrue){
+                        
+                        Button(action: {
+                            viewModel.addData(servis: servis.rawValue, date: newDate ,time: selectedTime)
+                            goWhenTrue = true                          }, label: {
+                            Text("Add")
+                                                 })
+                        
+                    }
                     
 //                    Button(action: {
 //                        let db = Firestore.firestore()

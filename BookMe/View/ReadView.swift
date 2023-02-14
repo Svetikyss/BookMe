@@ -12,17 +12,22 @@ import FirebaseAuth
 import SwiftUI
 
 struct ReadView: View {
-    
-    @ObservedObject private var viewModel = ReadData()
-    
+    let db = Firestore.firestore()
+    @ObservedObject var viewModel = ReadData()
+
+
     var body: some View {
-        
-        List(viewModel.list) { appointment in
-            Text(appointment.date)
-        }
-//        init() {
-//            viewModel.getDat()
-//        }
+
+      
+       
+            List(viewModel.list) { appointment in
+                VStack(alignment: .leading) {
+                    Text(appointment.date).font(.title)
+                }
+            }.onAppear() {
+                self.viewModel.fetchData()
+            }
+       
 
     }
 }

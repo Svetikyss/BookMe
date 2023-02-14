@@ -20,7 +20,8 @@ struct RoundcornShape: Shape{
 struct DetailsView: View {
     
     @State var servis: servisTitle
-//    @Binding var selected: servisTitle
+   
+    // @Binding var selected: servisTitle
 //    @Binding var servisTitleRawValue:String
     var body: some View {
         let servisTitleRawValue = servis.rawValue
@@ -66,7 +67,7 @@ struct DetailsView: View {
 //                .resizable()
             
 
-//            NavigationLink(destination: DateSelectView(servis)){
+//            NavigationLink(destination: DateSelectView(servis:servisTitle)){
                 
                 RoundedRectangle(cornerRadius: 8)
                     .fill(Color(.systemPink))

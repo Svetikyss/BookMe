@@ -52,6 +52,6 @@
 //
 //struct AppoiDetails_Previews: PreviewProvider {
 //    static var previews: some View {
-//        AppoiDetails(appointment: Appointment(id: "lZ213VftyIL37gvHmuN6", servis:"Feb 9, 2023",date:"Color",time:"10:00", notes: <#String#>))
+//        AppoiDetails(appointment: Appointment(id: "lZ213VftyIL37gvHmuN6",servis:"Color", date:"Feb 9, 2023",time:"10:00"))
 //    }
 //}

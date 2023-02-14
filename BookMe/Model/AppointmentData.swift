@@ -9,9 +9,11 @@ import Foundation
 import FirebaseFirestoreSwift
 
 struct Appointment: Identifiable, Codable{
-    var id: String
+//    var id: String
+    
+    var id: String = UUID().uuidString
 //    @DocumentID var id: String?
-    var servis : String // cut,blowout..
+    var servis : String? // cut,blowout..
     var date : String // day,mount,year
     var time: String // time spot
 //    var servisTime: String // servis time

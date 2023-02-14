@@ -5,6 +5,7 @@
 //  Created by Светлана Светикова on 1/26/23.
 //
 
+
 import SwiftUI
 
 struct ContentView: View {
@@ -24,4 +25,3 @@ struct ContentView_Previews: PreviewProvider {
        OnBoardingScreenView()
     }
 }
-

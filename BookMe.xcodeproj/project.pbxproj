@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9AC7B73BCBBB6E9A089A1FDD /* Pods_BookMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28484FF71D5F52CAAEA17BCF /* Pods_BookMe.framework */; };
 		DAC4E0EF298B2B3E009E62CA /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC4E0EE298B2B3E009E62CA /* HomeScreen.swift */; };
 		DAC4E0F1298B2C32009E62CA /* OnBoardingScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC4E0F0298B2C32009E62CA /* OnBoardingScreenView.swift */; };
 		DAC4E0F8298B4CD2009E62CA /* ImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC4E0F7298B4CD2009E62CA /* ImageData.swift */; };
@@ -58,8 +57,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		28484FF71D5F52CAAEA17BCF /* Pods_BookMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9108D61B9874F3BA45FB4776 /* Pods-BookMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookMe.release.xcconfig"; path = "Target Support Files/Pods-BookMe/Pods-BookMe.release.xcconfig"; sourceTree = "<group>"; };
 		DAC4E0EE298B2B3E009E62CA /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		DAC4E0F0298B2C32009E62CA /* OnBoardingScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingScreenView.swift; sourceTree = "<group>"; };
 		DAC4E0F7298B4CD2009E62CA /* ImageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageData.swift; sourceTree = "<group>"; };
@@ -80,7 +77,6 @@
 		DAE998BC29838F380047E202 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAE998BF29838F380047E202 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DAE998C6298A18240047E202 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		F2C6FBF73624372A03273347 /* Pods-BookMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookMe.debug.xcconfig"; path = "Target Support Files/Pods-BookMe/Pods-BookMe.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +89,6 @@
 				DAC4E12A29945A70009E62CA /* FirebaseFirestoreSwift in Frameworks */,
 				DAC4E11429945A70009E62CA /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 				DAC4E12C29945A70009E62CA /* FirebaseFunctions in Frameworks */,
-				9AC7B73BCBBB6E9A089A1FDD /* Pods_BookMe.framework in Frameworks */,
 				DAC4E10E29945A70009E62CA /* FirebaseAnalytics in Frameworks */,
 				DAC4E11A29945A70009E62CA /* FirebaseAuth in Frameworks */,
 				DAC4E12429945A70009E62CA /* FirebaseDynamicLinks in Frameworks */,
@@ -123,23 +118,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7984692864B60ACA9FBA2DAA /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				28484FF71D5F52CAAEA17BCF /* Pods_BookMe.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		9CB20FF2844115E4BE5D4755 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F2C6FBF73624372A03273347 /* Pods-BookMe.debug.xcconfig */,
-				9108D61B9874F3BA45FB4776 /* Pods-BookMe.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		DAC4E0EA298B162F009E62CA /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,8 +159,6 @@
 			children = (
 				DAE998B729838F360047E202 /* BookMe */,
 				DAE998B629838F360047E202 /* Products */,
-				9CB20FF2844115E4BE5D4755 /* Pods */,
-				7984692864B60ACA9FBA2DAA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -223,11 +199,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DAE998C329838F380047E202 /* Build configuration list for PBXNativeTarget "BookMe" */;
 			buildPhases = (
-				7EF8345CF630777F9D2E09A5 /* [CP] Check Pods Manifest.lock */,
 				DAE998B129838F360047E202 /* Sources */,
 				DAE998B229838F360047E202 /* Frameworks */,
 				DAE998B329838F360047E202 /* Resources */,
-				81AB2B19D9607B4FE882EF94 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -318,48 +292,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		7EF8345CF630777F9D2E09A5 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BookMe-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		81AB2B19D9607B4FE882EF94 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BookMe/Pods-BookMe-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BookMe/Pods-BookMe-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BookMe/Pods-BookMe-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DAE998B129838F360047E202 /* Sources */ = {
@@ -503,7 +435,6 @@
 		};
 		DAE998C429838F380047E202 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F2C6FBF73624372A03273347 /* Pods-BookMe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -532,7 +463,6 @@
 		};
 		DAE998C529838F380047E202 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9108D61B9874F3BA45FB4776 /* Pods-BookMe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
