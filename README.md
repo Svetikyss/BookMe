@@ -11,6 +11,9 @@ https://user-images.githubusercontent.com/82896134/221343287-af1785a1-60af-415f-
 
 
 
+
+
+
 Description
  I want to share my journey in building a simple booking  app. Hopefully this repository will be useful for others. I am always open for feedback, and other contributors would be super cool.
 
@@ -35,10 +38,13 @@ You will need to set up a Firebase project.
 
 Before you add the GoogleService-Info.plist file to your project, you should probably make sure it’s in a gitignore  file. One simple way to do that is go to Xcode Preferences then Source Control then select git and add GoogleService-Info.plist file to ignored files.
 
-4 Setup Authentication note this app uses Anonymous sign
+4 Setup Authentication 
 
 5 Setup Cloud Firestore I just selected test mode for now. You will need to change later to suit your needs.
-6 Storage
+
+
+6 Setup Storage
+
 
 Refferences
 
