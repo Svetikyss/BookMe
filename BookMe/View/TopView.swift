@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct TopView: View {
+    
+    @State var serchText = ""
+    @State var iseSerching = false
    
     let images: [ServisModel]=[
         .init(id:1, title: .Nails, price: "70$", image: "img2"),
@@ -19,16 +22,66 @@ struct TopView: View {
         .init(id:7, title: .BlowOut, price: "50$", image: "img8")]
               
     var body: some View {
-        ScrollView(.horizontal, showsIndicators: false){
-            HStack(alignment: .center,spacing: 20){
-                ForEach(images, id: \.id){post in
-                    NavigationLink(destination: DateSelectView(servis: post.title)) {
-                        ServisCardView(servises: post)
-                            .shadow(color: .gray, radius: 5,x:5,y:5) 
-                    }}
+        
+        NavigationView{
+            //            ScrollView(.horizontal, showsIndicators: false){
+            VStack{
+                HStack{
+                    TextField("Search terms here", text: $serchText)
+                        .padding(.leading,24)
+                }
+                .padding(.horizontal)
+                .padding(.horizontal)
+                .padding()
+                .background(Color(.systemGray4))
+                .cornerRadius(10)
+                .onTapGesture(perform: {
+                    iseSerching = true
+                })
+//                .padding(.horizontal)
+                .overlay(
+                    HStack{
+                        Image(systemName: "magnifyingglass")
+//                        Spacer(minLength: 20);
+                        Spacer()
+                        if iseSerching {
+                            Button(action:{ serchText = ""}, label:{
+                                Image(systemName:"xmark.circle.fill")
+                                
+                            })
+                                
+                            }
+                        
+                        
+                    }.padding(.horizontal,32)
+                )
                 
-            }
+                
+                ScrollView(.horizontal, showsIndicators: false){
+                    HStack(alignment: .center,spacing: 20){
+                        ForEach((images).filter({"\($0)".contains(serchText) || serchText.isEmpty}), id: \.id){post in
+                            NavigationLink(destination: DateSelectView(servis: post.title).navigationBarBackButtonHidden(true)) {
+                                ServisCardView(servises: post)
+                                    .shadow(color: .gray, radius: 5,x:5,y:5).navigationBarBackButtonHidden(true)                            }}
+                    }.navigationTitle("Find your service")
+                }.padding(.horizontal)
+                Stylists()
+            }.padding(.horizontal)
+          
         }
+//    }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
     }
 }
 

@@ -9,19 +9,23 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        
-        OnBoardingScreenView()
+    
+    @State var isLoggedIn: Bool = false
 
+        var body: some View {
+            if !isLoggedIn {
+                LoginView(isLoggedIn: $isLoggedIn)
+            } else {
+                OnBoardingScreenView()
             }
+        }
             
 
         }
         
 
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-       OnBoardingScreenView()
-    }
-}
+//struct ContentView_Previews: PreviewProvider {
+//    static var previews: some View {
+//     LoginView()isLoggedIn: $isLoggedIn    }
+//}

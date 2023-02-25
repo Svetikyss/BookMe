@@ -16,7 +16,11 @@ struct ServisModel{
 
 
 enum servisTitle: String{
-    case Nails ,Makeup,Spa,Shave,Color,Cut,BlowOut
+    case Nails = "Nails",Makeup = "Make Up",Spa = "Spa",Shave = "Shave",Color = "Hair Color",Cut = "Cur",BlowOut = "Hair Styling"
+    var description: String {
+            return self.rawValue
+        }
 }
 
 var time = ["10:00","11:00","12:00","13:00","14:00"]
+var time2 = ["15:00","16:00","17:00","18:00","19:00"]

@@ -49,6 +49,10 @@
 		DAC4E150299A03CB009E62CA /* ReadData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC4E14F299A03CB009E62CA /* ReadData.swift */; };
 		DAC4E152299A0847009E62CA /* AppoiDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC4E151299A0847009E62CA /* AppoiDetails.swift */; };
 		DAC4E154299A3575009E62CA /* ReadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC4E153299A3575009E62CA /* ReadView.swift */; };
+		DAC4E16A299B7999009E62CA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC4E169299B7999009E62CA /* LoginView.swift */; };
+		DAC4E16C299DBE36009E62CA /* Done.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC4E16B299DBE36009E62CA /* Done.swift */; };
+		DAC4E16E299DD092009E62CA /* Imgiew.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC4E16D299DD092009E62CA /* Imgiew.swift */; };
+		DAC4E170299DD1ED009E62CA /* ImgPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC4E16F299DD1ED009E62CA /* ImgPicker.swift */; };
 		DAE998B929838F360047E202 /* BookMeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE998B829838F360047E202 /* BookMeApp.swift */; };
 		DAE998BB29838F360047E202 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE998BA29838F360047E202 /* ContentView.swift */; };
 		DAE998BD29838F380047E202 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAE998BC29838F380047E202 /* Assets.xcassets */; };
@@ -71,6 +75,10 @@
 		DAC4E14F299A03CB009E62CA /* ReadData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadData.swift; sourceTree = "<group>"; };
 		DAC4E151299A0847009E62CA /* AppoiDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppoiDetails.swift; sourceTree = "<group>"; };
 		DAC4E153299A3575009E62CA /* ReadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadView.swift; sourceTree = "<group>"; };
+		DAC4E169299B7999009E62CA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		DAC4E16B299DBE36009E62CA /* Done.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Done.swift; sourceTree = "<group>"; };
+		DAC4E16D299DD092009E62CA /* Imgiew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Imgiew.swift; sourceTree = "<group>"; };
+		DAC4E16F299DD1ED009E62CA /* ImgPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgPicker.swift; sourceTree = "<group>"; };
 		DAE998B529838F360047E202 /* BookMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAE998B829838F360047E202 /* BookMeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMeApp.swift; sourceTree = "<group>"; };
 		DAE998BA29838F360047E202 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -140,6 +148,10 @@
 				DAC4E14F299A03CB009E62CA /* ReadData.swift */,
 				DAC4E151299A0847009E62CA /* AppoiDetails.swift */,
 				DAC4E153299A3575009E62CA /* ReadView.swift */,
+				DAC4E169299B7999009E62CA /* LoginView.swift */,
+				DAC4E16B299DBE36009E62CA /* Done.swift */,
+				DAC4E16D299DD092009E62CA /* Imgiew.swift */,
+				DAC4E16F299DD1ED009E62CA /* ImgPicker.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -305,6 +317,8 @@
 				DAC4E0EF298B2B3E009E62CA /* HomeScreen.swift in Sources */,
 				DAC4E0F8298B4CD2009E62CA /* ImageData.swift in Sources */,
 				DAC4E152299A0847009E62CA /* AppoiDetails.swift in Sources */,
+				DAC4E16E299DD092009E62CA /* Imgiew.swift in Sources */,
+				DAC4E16C299DBE36009E62CA /* Done.swift in Sources */,
 				DAC4E154299A3575009E62CA /* ReadView.swift in Sources */,
 				DAC4E10B29944D4B009E62CA /* AppointmentData.swift in Sources */,
 				DAC4E0FE298CD3F0009E62CA /* DetailsView.swift in Sources */,
@@ -312,6 +326,8 @@
 				DAC4E100298CD429009E62CA /* TopView.swift in Sources */,
 				DAC4E1092993FD7D009E62CA /* DateSelectView.swift in Sources */,
 				DAC4E102298D689C009E62CA /* Stylists.swift in Sources */,
+				DAC4E170299DD1ED009E62CA /* ImgPicker.swift in Sources */,
+				DAC4E16A299B7999009E62CA /* LoginView.swift in Sources */,
 				DAC4E0FC298CBD59009E62CA /* ServisCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

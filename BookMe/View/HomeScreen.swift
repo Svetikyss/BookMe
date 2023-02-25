@@ -27,20 +27,24 @@ struct HomeScreen: View {
                 .font(.title)
             Text("Find your style")
             
-            RoundedRectangle(cornerRadius: 15)
-                .fill(.gray.opacity(0.3))
-                .overlay(
-                    HStack{
-                        Image("search")
-                            .resizable()
-                            .frame(width: 50,height: 50,alignment: .top)
-                        Text("Search for style")
-                            .foregroundColor(.gray)
-                            .multilineTextAlignment(.leading)
-                        Spacer()
-                        
-                    }.padding()
-                ).frame(width: 350,height: 50,alignment: .center)
+//            RoundedRectangle(cornerRadius: 15)
+//                .fill(.gray.opacity(0.3))
+//                .overlay(
+//                    HStack{
+//                        Image("search")
+//                            .resizable()
+//                            .frame(width: 50,height: 50,alignment: .top)
+//                        Text("Search for style")
+//                            .foregroundColor(.gray)
+//                            .multilineTextAlignment(.leading)
+//                        Spacer()
+//                        
+//                    }.padding()
+//                        
+//                ).frame(width: 350,height: 50,alignment: .center)
+//            
+//            
+            
             Text("Top Servises")
                 .font(.title)
             TopView()

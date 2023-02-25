@@ -17,8 +17,11 @@ class ReadData: ObservableObject {
     
     
     func addData(servis: String,date: String, time: String ){
-        db.collection("Appointments").addDocument(data: ["time":time,"servis":servis,
-                                                         "date": date]) { (error) in
+        let userID = Auth.auth().currentUser!.uid;        db.collection("Users").document("\(userID)").collection("Appointments").addDocument(data:
+        
+//        db.collection("Appointments").addDocument(data:
+                                                    
+        ["time":time,"servis":servis,"date": date]) { (error) in
             if let error = error {
                 print("Error adding document: \(error)")
             } else {
@@ -30,7 +33,7 @@ class ReadData: ObservableObject {
     
     
     func fetchData() {
-            db.collection("Appointments").addSnapshotListener { (querySnapshot, error) in
+        let userID = Auth.auth().currentUser!.uid;        db.collection("Users").document("\(userID)").collection("Appointments").order(by: "date", descending: true).limit(to: 1).addSnapshotListener { (querySnapshot, error) in
                 guard let documents = querySnapshot?.documents else {
                     print("No documents")
                     return
@@ -47,37 +50,40 @@ class ReadData: ObservableObject {
     
     
     
-    
-    
+    func deleteData(_ orderDelete: Appointment) {
+      
+//            let appointment = list[index]
+            let userID = Auth.auth().currentUser!.uid;                db.collection("Users").document("\(userID)").collection("Appointments").document(orderDelete.id).delete { error in
+                if error == nil{
+                    DispatchQueue.main.async{
+                        self.list.removeAll { appot in
+                            return appot.id == orderDelete.id
+                            
+                        
+                        
+                    }
+                }
+            }
+        }
+        
+    }
+
+
     
     }
     
     
     
-    //
-    // function to update data
-    //    func updateData(title: String, id: String) {
-    //        databaseReference.document(id).updateData(["title" : title]) { error in
-    //            if let error = error {
-    //                print(error.localizedDescription)
-    //            } else {
-    //                print("Note updated succesfully")
-    //            }
-    //        }
-    //    }
-    
-    // function to delete data
-    //    func deleteData(at indexSet: IndexSet) {
-    //        indexSet.forEach { index in
-    //            let note = notes[index]
-    //            databaseReference.document(note.id ?? "").delete { error in
-    //                if let error = error {
-    //                    print("\(error.localizedDescription)")
-    //                } else {
-    //                    print("Note with ID \(note.id ?? "") deleted")
-    //                }
-    //            }
-    //        }
-    
+//    //
+//     function to update data
+//        func updateData(title: String, id: String) {
+//            databaseReference.document(id).updateData(["title" : title]) { error in
+//                if let error = error {
+//                    print(error.localizedDescription)
+//                } else {
+//                    print("Note updated succesfully")
+//                }
+//            }
+//        }
     
 

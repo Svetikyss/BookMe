@@ -28,7 +28,7 @@ struct DetailsView: View {
       
         VStack(alignment: .leading,spacing: 25){
             
-            Image("bg2")
+            Image("")
                 .resizable()
                 .edgesIgnoringSafeArea(.top)
                 .clipShape(RoundcornShape.init(corners: [.bottomLeft,.bottomRight], radius: 50))

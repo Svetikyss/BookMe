@@ -9,10 +9,10 @@ import SwiftUI
 
 struct Stylists: View {
     let dataArray:[PlaceModel] = [
-        .init(id: 0, name: "Lisa", time: "9-18", rating: "5", image: "stylist"),
-        .init(id: 1, name: "Maria", time: "9-18", rating: "5", image: "stylist"),
-        .init(id: 2, name: "Cris", time: "9-18", rating: "5", image: "stylist"),
-        .init(id: 3, name: "Paula", time: "9-18", rating: "5", image: "stylist")
+        .init(id: 0, name: "Lisa", time: "9-18", rating: "⭐ 5", image: "stylist"),
+        .init(id: 1, name: "Maria", time: "9-18", rating: "⭐ 4.7", image: "stylist"),
+        .init(id: 2, name: "Cris", time: "9-18", rating: "⭐ 4.5", image: "stylist"),
+        .init(id: 3, name: "Paula", time: "9-18", rating: "⭐ 5", image: "stylist")
     ]
     
     var body: some View {

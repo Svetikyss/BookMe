@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct OnBoardingScreenView: View {
+    
     var body: some View {
         
         NavigationView{
@@ -19,13 +20,12 @@ struct OnBoardingScreenView: View {
                                         .aspectRatio(contentMode: .fit)
                                         .frame(width: 500.0, height: 500.0)
                     Spacer()
-                    NavigationLink(destination: HomeScreen()){
+                    NavigationLink(destination: TopView().navigationBarBackButtonHidden(true)){
                         RoundedRectangle(cornerRadius: 12).fill(Color(hue: 0.859, saturation: 0.415, brightness: 0.826)).frame(width: 300,height: 70,alignment: .trailing).overlay(
                             HStack(spacing:10){Text("Book appointment").font(.title).fontWeight(.bold)
                                 Image(systemName:
                                 "chevron.right")
-                            }.foregroundColor(.yellow))
-                                                      
+                            }.foregroundColor(.yellow)).navigationBarBackButtonHidden(true)
                                     
                                                                 
 
